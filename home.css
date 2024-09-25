@@ -16,3 +16,46 @@ body {
     max-height: 300px; 
     object-fit: cover; 
   }
+
+
+
+.cards{
+  display:flex;
+  justify-content: space-around;
+  
+}
+.card{
+  margin:5px;
+}
+h2{
+  padding: 4rem;
+}
+
+/*
+ 
+  .list-unstyled a{
+  text-decoration: none;
+}
+.cards{
+  display:flex;
+  justify-content: space-around;
+}
+
+.card{
+  
+  margin: 10px;
+  border:3px solid rgb(143, 137, 137);
+}
+.card-body .img{
+  width:15px;
+  height:15px;
+}
+.card-footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 9, 10);
+    color:white;
+
+  }
+  
