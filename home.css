@@ -19,43 +19,33 @@ body {
 
 
 
+
+
+.btn-primary{
+  color:black;
+  background-color:orange;
+    
+  }
 .cards{
+  padding:5px;
   display:flex;
   justify-content: space-around;
   
 }
-.card{
-  margin:5px;
+.card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
-h2{
-  padding: 4rem;
+.card{
+  margin:15px;
+  flex-direction:column;
 }
 
-/*
- 
-  .list-unstyled a{
+h2{
+  padding: 2rem;
+}
+
+.list-unstyled a{
   text-decoration: none;
 }
-.cards{
-  display:flex;
-  justify-content: space-around;
-}
 
-.card{
-  
-  margin: 10px;
-  border:3px solid rgb(143, 137, 137);
-}
-.card-body .img{
-  width:15px;
-  height:15px;
-}
-.card-footer{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(10, 9, 10);
-    color:white;
 
-  }
-  
