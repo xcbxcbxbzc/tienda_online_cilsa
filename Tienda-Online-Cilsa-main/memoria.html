@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<!-- Navbar Superior -->
+<nav class="navbar fixed-top navbar-expand-lg bg-white" id="sectionsNav">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="#">
+        PC Hardware
+      </a>
+      <!-- Lupa Responsive -->
+      <button class="btn btn-link collapse show-res lupa_res" data-bs-toggle="modal" data-bs-target="#buscador">
+        <i class="fa fa-search"></i>
+      </button>
+      <!-- Botón Navbar -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-superior">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Barra de búsqueda y carrito -->
+    <div class="collapse navbar-collapse" id="menu-superior">
+      <ul class="navbar-nav ms-auto w-100">
+        <li class="nav-item w-100">
+          <!-- Buscador -->
+          <form class="d-flex" role="search" method="get" action="#">
+            <input class="form-control me-2" type="search" placeholder="Buscar Productos o Marcas" aria-label="Buscar" style="width: 90%; float: left;">
+            <button class="btn btn-dark" type="submit" style="width: 43px; background-color:#000; height: 43px; float: right;">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar Inferior -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-top: 70px;"> 
+    <div class="container justify-content-center">
+      <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3"> 
+            <a class="nav-link text-light" href="home.html">Inicio</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#productos-destacados">Productos</a>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="gabinete.html">Gabinetes</a></li>
+              <li><a class="dropdown-item" href="memoria.html">Memorias</a></li>
+              <li><a class="dropdown-item" href="grafica.html">Tarjetas gráficas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div id="gabinetes" class="row banner-separator-container-double"></div>
+<div class="banner-separator-120 d-flex">
+    <h1 class="white lt-s-3 m-auto" style="font-weight: lighter; margin: auto!important;">MEMORIAS</h1>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start" id="contacto">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Sobre Nosotros</h5>
+                <p>Tienda Online ofrece una amplia selección de productos de calidad, asegurando una excelente experiencia de compra.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-lg-end"> 
+                <h5 class="text-uppercase">Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Correo: contacto@tiendaonline.com</a></li>
+                    <li><a href="#" class="text-dark">Teléfono: +54 11 1111-1111</a></li>
+                    <li><a href="#" class="text-dark">Dirección: Av. ...</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+        © 2024 Tienda Online. Todos los derechos reservados.
+    </div>
+</footer>
+
+  <!-- Enlace a Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="categorias.js"></script>
+</body>
+</html>

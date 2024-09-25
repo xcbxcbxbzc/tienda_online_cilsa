@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<!-- Navbar Superior -->
+<nav class="navbar fixed-top navbar-expand-lg bg-white" id="sectionsNav">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="#">
+        PC Hardware
+      </a>
+      <!-- Lupa Responsive -->
+      <button class="btn btn-link collapse show-res lupa_res" data-bs-toggle="modal" data-bs-target="#buscador">
+        <i class="fa fa-search"></i>
+      </button>
+      <!-- Botón Navbar -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-superior">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Barra de búsqueda y carrito -->
+    <div class="collapse navbar-collapse" id="menu-superior">
+      <ul class="navbar-nav ms-auto w-100">
+        <li class="nav-item w-100">
+          <!-- Buscador -->
+          <form class="d-flex" role="search" method="get" action="#">
+            <input class="form-control me-2" type="search" placeholder="Buscar Productos o Marcas" aria-label="Buscar" style="width: 90%; float: left;">
+            <button class="btn btn-dark" type="submit" style="width: 43px; background-color:#000; height: 43px; float: right;">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar Inferior -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-top: 70px;"> 
+  <div class="container justify-content-center">
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#productos-destacados">Productos</a>
+      </li>
+        <li class="nav-item dropdown mx-3">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gabinete.html">Gabinetes</a></li>
+            <li><a class="dropdown-item" href="memoria.html">Memorias</a></li>
+            <li><a class="dropdown-item" href="grafica.html">Tarjetas gráficas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#contacto">Contacto</a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- carousel -->
+  <div class="container-fluid my-3"> 
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div id="carouselNewArrivals" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselNewArrivals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselNewArrivals" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselNewArrivals" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="./img/carousel/carousel1.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carousel/carousel2.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carousel/carousel3.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewArrivals" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNewArrivals" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="productos-destacados" class="row banner-separator-container-double"></div>
+  <div class="banner-separator-120 d-flex">
+      <h1 class="white lt-s-3 m-auto" style="font-weight: lighter; margin: auto!important;">PRODUCTOS DESTACADOS</h1>
+  </div>
+
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/athlon_3000.jpeg" class="card-img-top" alt="Imagen del Producto">
+        <div class="card-body">
+          <h5 class="card-title">Athlon 3000</h5>
+          <p class="card-text">Procesador Amd Athlon 3000G + Vega 3 amd4.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/ryzen_3.jpeg" class="card-img-top" alt="Imagen del Producto">
+        <div class="card-body">
+          <h5 class="card-title">Ryzen 3</h5>
+          <p class="card-text">Procesador Amd Ryzen3 3200G 3.8 Ghz + Vega8 -AM4</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/ryzen_5.jpeg" class="card-img-top" alt="Imagen del Producto">
+        <div class="card-body">
+          <h5 class="card-title">Ryzen 5</h5>
+          <p class="card-text">Procesador Amd Ryzen 5 4600G 4.2 gHZ - AM4</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/xfx.jpg" class="card-img-top" alt="Imagen del Producto">
+        <div class="card-body">
+          <h5 class="card-title">XFX Radeon</h5>
+          <p class="card-text">Placa de video XFX Radeon RX 580 8GB GDDR GTS 2048SP</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/asrock.jpg" class="card-img-top" alt="Imagen del Producto">
+        <div class="card-body">
+          <h5 class="card-title">Asrock</h5>
+          <p class="card-text">Placa de Video Asrock Radeon RX 550 2GB GDDR5</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/asus.jpg" class="card-img-top" alt="Imagen del Producto">
+        <div class="card-body">
+          <h5 class="card-title">Asus</h5>
+          <p class="card-text">Placa de Video ASUS TUF Radeon RX 7900 XT 20GB GDDR6.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start" id="contacto">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 mb-4 mb-md-0"> 
+                <h5 class="text-uppercase">Sobre Nosotros</h5>
+                <p>Tienda Online ofrece una amplia selección de productos de calidad, asegurando una excelente experiencia de compra.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-lg-end"> 
+                <h5 class="text-uppercase">Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Correo: contacto@tiendaonline.com</a></li>
+                    <li><a href="#" class="text-dark">Teléfono: +54 11 1111-1111</a></li>
+                    <li><a href="#" class="text-dark">Dirección: Av. ...</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+        © 2024 Tienda Online. Todos los derechos reservados.
+    </div>
+</footer>
+
+  <!-- Enlace a Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="categorias.js"></script>
+</body>
+</html>
+
